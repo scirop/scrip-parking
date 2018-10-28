@@ -146,7 +146,7 @@ def calc():
     return Response(get_frame(),mimetype='multipart/x-mixed-replace; boundary=frame')
 
 if __name__ == '__main__':
-    app.run(host='localhost', debug=True, threaded=True)
+    app.run()
     
 #if config['save_video']: out.release()
 #cv2.destroyAllWindows()    
