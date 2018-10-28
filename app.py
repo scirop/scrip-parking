@@ -25,7 +25,7 @@ def get_frame():
               'park_sec_to_wait': 0,
               'start_frame': 0}
     
-    cap = cv2.VideoCapture(fn)
+    cap = cv2.VideoCapture('https://videos3.earthcam.com/fecnetwork/9974.flv/playlist.m3u8')
     
     video_info = {'fps':    cap.get(cv2.CAP_PROP_FPS),
                   'width':  int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)),
